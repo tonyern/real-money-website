@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+:root {
+	--main-text-color: black;
+}
+
 body
 {
 	font-family: sans-serif;
@@ -30,7 +34,7 @@ body
 
 .navbar-nav li a
 {
-	color: #000 !important;
+	color: var(--main-text-color, black) !important;
 	font-weight: 600;
 	float: right;
 	text-align: left;
@@ -38,13 +42,13 @@ body
 
 .navbar-brand
 {
-	color: #000 !important;
+	color: var(--main-text-color, black) !important;
 	font-size: 50px !important;
 }
 
 .fa-bars
 {
-	color: #000;
+	color: var(--main-text-color, black);
 	font-size: 30px !important;
 }
 
@@ -55,12 +59,27 @@ body
 
 /***** End of Navigation bar section *****/
 
+/***** Banner section *****/
+#banner
+{
+	padding-top: 5%;
+}
+
+/***** End of Banner section *****/
+
 /***** Footer section *****/
+#footer-border {
+	background-color: gold;
+	height: 2px !important;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 #footer
 {
-	background-color: #000;
+	background-color: var(--main-text-color, black);
 	color: #fff;
-	padding: 10px;
+	padding-top: 15px;
 }
 
 /***** End of Footer section *****/
