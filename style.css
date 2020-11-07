@@ -6,6 +6,7 @@
 
 :root {
 	--main-text-color: black;
+	--newsletter-background: gray;
 }
 
 body
@@ -68,6 +69,27 @@ body
 /***** End of Banner section *****/
 
 /***** Footer section *****/
+#join-newsletter {
+	margin-top: 40px;
+}
+
+#email {
+	padding: 10px 10px 10px 10px;
+}
+
+#subscribe-button {
+	margin-top: 30px;
+	padding: 10px 10px 10px 10px;
+	background-color: palegoldenrod;
+}
+
+#newsletter-subscription {
+	background-color: var(--newsletter-background, gray);
+	color: #fff;
+	height: 100px;
+	margin-top: 50px;
+}
+
 #footer-border {
 	background-color: gold;
 	height: 2px !important;
