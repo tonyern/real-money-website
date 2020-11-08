@@ -7,11 +7,18 @@
 :root {
 	--main-text-color: black;
 	--newsletter-background: gray;
+	--main-color-theme: gold;
 }
 
 body
 {
 	font-family: sans-serif;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	max-height:100%;
 }
 
 /***** Navigation bar section *****/
@@ -24,7 +31,7 @@ body
 
 .navbar
 {
-	background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 215, 0));
+	background-color: var(--main-color-theme, gold);
 	padding: 0 !important;
 }
 
@@ -78,7 +85,8 @@ body
 }
 
 #subscribe-button {
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 10px 10px 10px 10px;
 	background-color: palegoldenrod;
 }
@@ -86,12 +94,12 @@ body
 #newsletter-subscription {
 	background-color: var(--newsletter-background, gray);
 	color: #fff;
-	height: 100px;
+	height: auto;
 	margin-top: 50px;
 }
 
 #footer-border {
-	background-color: gold;
+	background-color: var(--main-color-theme, gold);
 	height: 2px !important;
 	margin-left: 50px;
 	margin-right: 50px;
